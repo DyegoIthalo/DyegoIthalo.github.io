@@ -1,0 +1,20 @@
+.formacao {
+  background: #141414;
+  color: #fff;
+}
+
+.formacao .subtitulo {
+  color: #000;
+}
+
+.formacao-texto {
+  font-size: 1.5rem;
+  line-height: 1.33;
+  max-width: 40ch;
+  margin-bottom: 60px;
+  color: #a3a3a3;
+}
+
+.formacao-texto strong {
+  color: #fff;
+}
