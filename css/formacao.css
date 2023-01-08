@@ -5,6 +5,7 @@
 
 .formacao .subtitulo {
   color: #000;
+  max-width: 5ch;
 }
 
 .formacao-texto {
@@ -70,6 +71,20 @@
   margin-bottom: 60px;
 }
 
+.container {
+  position: relative;
+}
+
+.formacao .container::after {
+  content: "";
+  display: block;
+  width: 130px;
+  height: 100px;
+  background: url("../img/detalhe.svg") no-repeat center;
+  position: absolute;
+  bottom: -45px;
+}
+
 .formacao-extra h3 {
   font-size: 0.875rem;
   line-height: 1.4;
@@ -95,4 +110,37 @@
 
 .idiomas h3::before {
   background: url("../img/idiomas.svg") no-repeat center center;
+}
+
+.formacao-extra li {
+  font-size: 1.125rem;
+  height: 1.1;
+  margin-bottom: 20px;
+}
+
+.formacao-extra span {
+  color: #8f8f8f;
+}
+
+.cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 800px) {
+  .container {
+    grid-template-columns: 1fr;
+    padding: 60px 20px;
+    gap: 40px;
+  }
+  .formacao .subtitulo {
+    color: #fff;
+  }
+  .formacao-texto {
+    font-size: 1.25rem;
+  }
+  .formacao-extra h3::before {
+    position: initial;
+    margin-bottom: 10px;
+  }
 }
