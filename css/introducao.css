@@ -61,16 +61,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .introducao h1 {
-    font-size: 1.5rem;
-    gap: 30px;
-  }
-  .introducao p {
-    font-size: 0.75rem;
-  }
-}
-
 @media (max-width: 400px) {
   .introducao {
     grid-template-columns: 1fr;

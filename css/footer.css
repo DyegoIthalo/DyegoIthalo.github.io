@@ -36,10 +36,13 @@
   color: #8f8f8f;
 }
 
-@media (max-width: 800px) {
+@media (max-width: 900px) {
   .footer-container {
     grid-template-columns: 1fr;
     gap: 60px;
+  }
+  .footer-texto {
+    margin-bottom: 36px;
   }
   .footer-contato li {
     font-size: 1.5rem;

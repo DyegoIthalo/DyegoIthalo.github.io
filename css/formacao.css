@@ -130,7 +130,6 @@
 @media (max-width: 800px) {
   .container {
     grid-template-columns: 1fr;
-    padding: 60px 20px;
     gap: 40px;
   }
   .formacao .subtitulo {

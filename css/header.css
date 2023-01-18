@@ -1,39 +1,68 @@
 .header {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 20px;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
-
-/** Menu - deixando um do lado do outro, adicionado wrap para quebrar o menu, dando um espaço, alinhando ao centro**/
 
 .header-menu {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
 }
 
-/** Dividir o valor por 10 para chegar na unidade REM**/
 .header-menu a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #141414;
   font-size: 1.125rem;
   line-height: 1.3;
-  padding: 10px 20px;
-  text-decoration: none;
-  color: #141414;
+}
+
+.header-menu a:after {
+  content: "";
   display: block;
+  height: 2px;
+  width: 0px;
+  background: #2bd1c7;
+  margin-top: 4px;
+  transition: 0.3s;
+}
+
+.header-menu a:hover:after {
+  width: 100%;
 }
 
 @media (max-width: 800px) {
-  .header {
-    flex-direction: column;
-    gap: 40px;
-    padding: 20px;
+  .header-menu {
+    gap: 20px;
   }
-  .header a {
+  .header-menu a {
     background: #f5f5f5;
+    padding: 12px 16px;
     border-radius: 4px;
+  }
+  .header-menu a:hover {
+    background-color: #cecece;
+  }
+  .header a:after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu a {
+    padding: 8px 12px;
+    font-size: 0.925rem;
+  }
+}
+@media (max-width: 500px) {
+  .header {
+    justify-content: center;
+    gap: 48px;
   }
 }
