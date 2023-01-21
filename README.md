@@ -1,7 +1,7 @@
 # Descrição do projeto :computer:
 
 Projeto desenvolvido para aprendizado (curso da Origamid). <br/><br/> 
-Esse site é praticamente um currículo com informações sobre os cursos, graduações, contato que eu fiz.<br/><br/>
+Esse site é praticamente um currículo com minhas informações.<br/><br/>
 Lembrando que a parte de experiência, os trabalhos sitados foram feitos no curso tecnólogo como projeto integrador.<br/><br/>
 
 https://user-images.githubusercontent.com/89106412/213883816-9cbe5b45-f399-4bdb-8c37-08b27c6f2d8e.mp4
